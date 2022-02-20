@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+config.ini
+gas_station_list.txt
+*.db
+*.db-journal
+
