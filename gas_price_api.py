@@ -3,7 +3,7 @@ import requests
 class GasPriceAPI():
     """Represents a class to access the gas price API"""
 
-    def __init__(self, token, url):
+    def __init__(self, token: str, url: str):
         self._api_key = token
         self._url = url
     

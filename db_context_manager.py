@@ -4,7 +4,7 @@ import sqlite3
 class Database:
     """Represents a class to interact with the database"""
 
-    def __init__(self, path):
+    def __init__(self, path: str) -> None:
         self._path = path
         self._name = "gas_station_prices.db"
       
@@ -13,10 +13,10 @@ class Database:
 
         self._initialize_database()
      
-    def __enter__(self):
+    def __enter__(self) -> None:
         return self
 
-    def __exit__(self, exception_type, exception_value, exception_traceback):     
+    def __exit__(self, exception_type, exception_value, exception_traceback) -> None:     
         self._commit()
         self._connection.close()
 
