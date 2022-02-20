@@ -45,8 +45,3 @@ class GasPriceAPI():
         
 if __name__ == "__main__":
     api = GasPriceAPI()
-
-    print(api.get_gas_prices(["24a381e3-0d72-416d-bfd8-b2f65f6e5802"]))
-    print(api.get_station_details("24a381e3-0d72-416d-bfd8-b2f65f6e5804"))
-    
-        

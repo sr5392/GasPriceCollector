@@ -55,9 +55,3 @@ def get_station_ids() -> list:
 
 if __name__ == "__main__":
     main()
-  
-  
-
-   
-
-    

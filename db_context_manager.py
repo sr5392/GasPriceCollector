@@ -145,5 +145,3 @@ class Database:
         """Check if the gas station table of the database already contains a gas station"""
         sql = "SELECT EXISTS (SELECT * FROM gasstations WHERE id = ?);"
         return self._query(sql, (station_id,))[0][0]
-    
-
